@@ -1,0 +1,71 @@
+* { 
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    max-height: 768px;
+    background: url("assets/fondo radio 2.png"); 
+    background-repeat: repeat-x;
+
+}
+
+header {
+    width: 100%;
+    position: relative;
+}
+
+header .logo-radio {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    
+}
+
+.container {
+    width: 100%;
+}
+
+.forma-reproducción {
+    max-width: 100%;
+    display: flex;
+}
+
+.forma-reproducción img {
+    margin: auto;
+    padding-top: 200px;
+    position: relative;
+}
+
+.forma-reproducción #p1 {
+    margin: auto;
+    padding-top: 250px;
+    position: relative;
+    width: 200px;
+}
+
+.video-loop {
+    overflow: hidden;
+}
+
+.video-loop  video{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 380px;
+}
+
+.freeYess-volSliderBar {
+    width: 56px;
+    height: 6px;
+    background-color: rgba(255,255,255,.3);
+    position: absolute;
+    right: 97px;
+    top: 32px;
+    border-radius: 8px;
+    transition: background-color ease .7s;
+    z-index: 5;
+}

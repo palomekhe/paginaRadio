@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Radio del Ocio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-drawer.css">
+    <link rel="stylesheet" href="movil-responsive.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div id="menuDrawer" class="drawer">
+            <a href="javascript:void(0)" class="closebtn cerrar-drawer" onclick="closeDrawer()">&times;</a>
+
+            <a class="enlace-redes" href="#">Música</a>
+            <a class="enlace-redes" href="#">Teatro</a>
+            <a class="enlace-redes" href="#">Noche</a>
+            <a class="enlace-redes" href="#">Club del Ocio</a>
+            <a class="enlace-redes" href="#">Ocio ticket</a>
+
+            <img class="logo-drawer logo-radio" src="assets/Recurso 1.png" alt="">
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/laguiadelocio/"><img src="assets/facebook icon.png" alt=""></a>
+                <a href="https://www.instagram.com/ocioencordoba/"><img src="assets/instagram icon.png" alt=""></a>
+                <a href="https://twitter.com/LaGuiadelOcio"><img src="assets/x icon.png" alt=""></a>
+                <a href="https://www.youtube.com/@canaldelociotv7222"><img src="assets/youtube icon.png" alt=""></a>
+            </div>
+
+        </div>
+    
+        <div id="mainContent">
+            <span class="openbtn" onclick="openDrawer()">&#9776; </span>
+        </div>
+        <img class="logo-radio" src="assets/Recurso 1.png" alt="">
+    </header>
+
+    <div class="container">
+        <div class="forma-reproducción" id="player">
+            <div id="p1"></div>
+            
+        </div>
+        <div class="video-loop">
+            <video src="assets/wavw radio 6.mp4" autoplay="true" muted="true" loop="true"></video>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://radiowink.com/dist/freeV3.js"></script>
+
+    <script>var p1 = new freeYess({target: '#p1', url: 'https://s3.yesstreaming.net:19000', platform: 'ic', mountPoint: 'stream', artistc: 'F8BAB0', songtitlec: 'FFFFFF', buttonc: 'FFFFFF', bg: '000000', artwork: '0', autoplay: 'true',   })</script>
+</body>
+</html>

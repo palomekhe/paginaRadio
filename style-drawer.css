@@ -1,0 +1,85 @@
+body {
+    font-family: "Arial", sans-serif;
+}
+
+.drawer {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 63%, rgba(34,181,115,1) 100%); 
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.drawer .enlace-redes {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #22B573;
+    display: block;
+    transition: 0.3s;
+}
+
+.drawer .logo-drawer {
+    top: 500px;
+    width: 100px;
+}
+
+.drawer .enlace-redes:hover {
+    color: #ffffff;
+}
+
+.drawer .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #22B573;
+    text-decoration: none;
+}
+
+#mainContent {
+    transition: margin-left .3s;
+    padding: 16px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+.social-icons {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 30px;
+}
+
+.social-icons a {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    
+}
+
+.social-icons a img {
+    height: 35px;
+
+}
